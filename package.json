@@ -1,0 +1,25 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "SoftUni problems for the JS Course.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salamander333/SoftUni-JS_Core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salamander333/SoftUni-JS_Core/issues"
+  },
+  "homepage": "https://github.com/Salamander333/SoftUni-JS_Core#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  }
+}
