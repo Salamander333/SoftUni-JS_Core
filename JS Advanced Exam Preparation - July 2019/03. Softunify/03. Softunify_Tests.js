@@ -1,11 +1,11 @@
 /* eslint no-undef: 0 */
-const Softunify = require('./03. Softunify');
+const SoftUniFy = require('./03. Softunify');
 const assert = require('chai').assert;
 
 describe('Softunify tests', function () {
   describe('constructor', function () {
     it('should return empty object on new init', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       let actual = softunify.constructor.length;
       let expected = 0;
@@ -16,7 +16,7 @@ describe('Softunify tests', function () {
 
   describe('downloadSong', function () {
     it('download song method shoud add artist and song', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       softunify.downloadSong('Death', 'Voice of the soul', '...');
 
@@ -29,7 +29,7 @@ describe('Softunify tests', function () {
 
   describe('playSong()', function () {
     it('should play given song', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       softunify.downloadSong('Death', 'Voice of the soul', '...');
 
@@ -40,7 +40,7 @@ describe('Softunify tests', function () {
     });
 
     it('should return string with error when playing song not downloaded yet', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       let song = 'Voice of the soul';
       let actual = softunify.playSong(song);
@@ -52,7 +52,7 @@ describe('Softunify tests', function () {
 
   describe('sоngList', function () {
     it('songsList should return all downloaded songs', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       softunify.downloadSong('Death', 'Symbolic', '...');
       softunify.downloadSong('Death', 'Painkiller', '.....');
@@ -63,7 +63,7 @@ describe('Softunify tests', function () {
     });
 
     it('songsList should return message when empty list', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       let actual = softunify.songsList;
       let expected = 'Your song list is empty';
@@ -74,7 +74,7 @@ describe('Softunify tests', function () {
 
   describe('rateArtist()', function () {
     it('rateArtist() should return message when artist not found', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       let artist = 'Death';
       let actual = softunify.rateArtist(artist);
@@ -84,7 +84,7 @@ describe('Softunify tests', function () {
     });
 
     it('rateArtist() should return 0 when second argument is NaN', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       softunify.downloadSong('Death', 'Symbolic', '...');
       let artist = 'Death';
@@ -95,7 +95,7 @@ describe('Softunify tests', function () {
     });
 
     it('rateArtist() should return correct rating', function () {
-      let softunify = new Softunify();
+      let softunify = new SoftUniFy();
 
       softunify.downloadSong('Death', 'Symbolic', '...');
       let artist = 'Death';
