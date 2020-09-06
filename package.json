@@ -29,7 +29,7 @@
     "eslint-plugin-standard": "^4.0.0"
   },
   "dependencies": {
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.5.3",
     "mustache": "^3.0.1"
   }
 }
